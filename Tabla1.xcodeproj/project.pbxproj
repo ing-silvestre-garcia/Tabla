@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D75689D71F732FEE00219207 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D61F732FEE00219207 /* main.m */; };
 		D75689DA1F732FEE00219207 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D91F732FEE00219207 /* AppDelegate.m */; };
-		D75689DD1F732FEE00219207 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689DC1F732FEE00219207 /* ViewController.m */; };
+		D75689DD1F732FEE00219207 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689DC1F732FEE00219207 /* Home.m */; };
 		D75689E01F732FEE00219207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75689DE1F732FEE00219207 /* Main.storyboard */; };
 		D75689E21F732FEE00219207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75689E11F732FEE00219207 /* Assets.xcassets */; };
 		D75689E51F732FEE00219207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75689E31F732FEE00219207 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		D75689D61F732FEE00219207 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D75689D81F732FEE00219207 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D75689D91F732FEE00219207 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D75689DB1F732FEE00219207 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D75689DC1F732FEE00219207 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D75689DB1F732FEE00219207 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		D75689DC1F732FEE00219207 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		D75689DF1F732FEE00219207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D75689E11F732FEE00219207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D75689E41F732FEE00219207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,10 +101,8 @@
 		D75689D41F732FEE00219207 /* Tabla1 */ = {
 			isa = PBXGroup;
 			children = (
-				D75689D81F732FEE00219207 /* AppDelegate.h */,
-				D75689D91F732FEE00219207 /* AppDelegate.m */,
-				D75689DB1F732FEE00219207 /* ViewController.h */,
-				D75689DC1F732FEE00219207 /* ViewController.m */,
+				D7568A091F73308E00219207 /* Main */,
+				D7568A081F73307200219207 /* Controllers */,
 				D75689DE1F732FEE00219207 /* Main.storyboard */,
 				D75689E11F732FEE00219207 /* Assets.xcassets */,
 				D75689E31F732FEE00219207 /* LaunchScreen.storyboard */,
@@ -138,6 +136,24 @@
 				D75689FC1F732FEE00219207 /* Info.plist */,
 			);
 			path = Tabla1UITests;
+			sourceTree = "<group>";
+		};
+		D7568A081F73307200219207 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D75689DB1F732FEE00219207 /* Home.h */,
+				D75689DC1F732FEE00219207 /* Home.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D7568A091F73308E00219207 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D75689D81F732FEE00219207 /* AppDelegate.h */,
+				D75689D91F732FEE00219207 /* AppDelegate.m */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75689DD1F732FEE00219207 /* ViewController.m in Sources */,
+				D75689DD1F732FEE00219207 /* Home.m in Sources */,
 				D75689DA1F732FEE00219207 /* AppDelegate.m in Sources */,
 				D75689D71F732FEE00219207 /* main.m in Sources */,
 			);
