@@ -15,6 +15,9 @@
 		D75689E51F732FEE00219207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75689E31F732FEE00219207 /* LaunchScreen.storyboard */; };
 		D75689F01F732FEE00219207 /* Tabla1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689EF1F732FEE00219207 /* Tabla1Tests.m */; };
 		D75689FB1F732FEE00219207 /* Tabla1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689FA1F732FEE00219207 /* Tabla1UITests.m */; };
+		D7568A0F1F7336C200219207 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7568A0D1F7336C200219207 /* cellMainTable.m */; };
+		D7568A101F7336C200219207 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7568A0E1F7336C200219207 /* cellMainTable.xib */; };
+		D7568A121F7338D900219207 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = D7568A111F7338D900219207 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		D75689F61F732FEE00219207 /* Tabla1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tabla1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75689FA1F732FEE00219207 /* Tabla1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tabla1UITests.m; sourceTree = "<group>"; };
 		D75689FC1F732FEE00219207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7568A0C1F7336C200219207 /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
+		D7568A0D1F7336C200219207 /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
+		D7568A0E1F7336C200219207 /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
+		D7568A111F7338D900219207 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,8 @@
 		D75689D41F732FEE00219207 /* Tabla1 */ = {
 			isa = PBXGroup;
 			children = (
+				D7568A111F7338D900219207 /* Images */,
+				D7568A0B1F73363100219207 /* Celdas */,
 				D7568A091F73308E00219207 /* Main */,
 				D7568A081F73307200219207 /* Controllers */,
 				D75689DE1F732FEE00219207 /* Main.storyboard */,
@@ -154,6 +163,16 @@
 				D75689D91F732FEE00219207 /* AppDelegate.m */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		D7568A0B1F73363100219207 /* Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				D7568A0C1F7336C200219207 /* cellMainTable.h */,
+				D7568A0D1F7336C200219207 /* cellMainTable.m */,
+				D7568A0E1F7336C200219207 /* cellMainTable.xib */,
+			);
+			name = Celdas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7568A121F7338D900219207 /* Images in Resources */,
 				D75689E51F732FEE00219207 /* LaunchScreen.storyboard in Resources */,
 				D75689E21F732FEE00219207 /* Assets.xcassets in Resources */,
 				D75689E01F732FEE00219207 /* Main.storyboard in Resources */,
+				D7568A101F7336C200219207 /* cellMainTable.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +313,7 @@
 				D75689DD1F732FEE00219207 /* Home.m in Sources */,
 				D75689DA1F732FEE00219207 /* AppDelegate.m in Sources */,
 				D75689D71F732FEE00219207 /* main.m in Sources */,
+				D7568A0F1F7336C200219207 /* cellMainTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
