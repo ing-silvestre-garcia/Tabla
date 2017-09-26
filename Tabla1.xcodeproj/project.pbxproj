@@ -17,7 +17,10 @@
 		D75689FB1F732FEE00219207 /* Tabla1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689FA1F732FEE00219207 /* Tabla1UITests.m */; };
 		D7568A0F1F7336C200219207 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7568A0D1F7336C200219207 /* cellMainTable.m */; };
 		D7568A101F7336C200219207 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7568A0E1F7336C200219207 /* cellMainTable.xib */; };
-		D7568A121F7338D900219207 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = D7568A111F7338D900219207 /* Images */; };
+		D7FB13D21F734D03004C4CBF /* cersei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7FB13CE1F734D03004C4CBF /* cersei.jpg */; };
+		D7FB13D31F734D03004C4CBF /* danerys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7FB13CF1F734D03004C4CBF /* danerys.jpg */; };
+		D7FB13D41F734D03004C4CBF /* jon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7FB13D01F734D03004C4CBF /* jon.jpg */; };
+		D7FB13D51F734D03004C4CBF /* tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7FB13D11F734D03004C4CBF /* tyrion.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,10 @@
 		D7568A0C1F7336C200219207 /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
 		D7568A0D1F7336C200219207 /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
 		D7568A0E1F7336C200219207 /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
-		D7568A111F7338D900219207 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		D7FB13CE1F734D03004C4CBF /* cersei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cersei.jpg; sourceTree = "<group>"; };
+		D7FB13CF1F734D03004C4CBF /* danerys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = danerys.jpg; sourceTree = "<group>"; };
+		D7FB13D01F734D03004C4CBF /* jon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon.jpg; sourceTree = "<group>"; };
+		D7FB13D11F734D03004C4CBF /* tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,7 @@
 		D75689D41F732FEE00219207 /* Tabla1 */ = {
 			isa = PBXGroup;
 			children = (
-				D7568A111F7338D900219207 /* Images */,
+				D7FB13CD1F734D03004C4CBF /* Images */,
 				D7568A0B1F73363100219207 /* Celdas */,
 				D7568A091F73308E00219207 /* Main */,
 				D7568A081F73307200219207 /* Controllers */,
@@ -173,6 +179,17 @@
 				D7568A0E1F7336C200219207 /* cellMainTable.xib */,
 			);
 			name = Celdas;
+			sourceTree = "<group>";
+		};
+		D7FB13CD1F734D03004C4CBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D7FB13CE1F734D03004C4CBF /* cersei.jpg */,
+				D7FB13CF1F734D03004C4CBF /* danerys.jpg */,
+				D7FB13D01F734D03004C4CBF /* jon.jpg */,
+				D7FB13D11F734D03004C4CBF /* tyrion.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,11 +298,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7568A121F7338D900219207 /* Images in Resources */,
+				D7FB13D21F734D03004C4CBF /* cersei.jpg in Resources */,
 				D75689E51F732FEE00219207 /* LaunchScreen.storyboard in Resources */,
 				D75689E21F732FEE00219207 /* Assets.xcassets in Resources */,
 				D75689E01F732FEE00219207 /* Main.storyboard in Resources */,
+				D7FB13D41F734D03004C4CBF /* jon.jpg in Resources */,
 				D7568A101F7336C200219207 /* cellMainTable.xib in Resources */,
+				D7FB13D31F734D03004C4CBF /* danerys.jpg in Resources */,
+				D7FB13D51F734D03004C4CBF /* tyrion.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +565,7 @@
 				D7568A011F732FEE00219207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7568A021F732FEE00219207 /* Build configuration list for PBXNativeTarget "Tabla1Tests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +574,7 @@
 				D7568A041F732FEE00219207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7568A051F732FEE00219207 /* Build configuration list for PBXNativeTarget "Tabla1UITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +583,7 @@
 				D7568A071F732FEE00219207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
