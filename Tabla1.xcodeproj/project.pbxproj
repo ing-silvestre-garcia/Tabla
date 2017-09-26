@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D749AEFC1F79F0230059760F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749AEFB1F79F0230059760F /* NewPersonViewController.m */; };
 		D75689D71F732FEE00219207 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D61F732FEE00219207 /* main.m */; };
 		D75689DA1F732FEE00219207 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D91F732FEE00219207 /* AppDelegate.m */; };
 		D75689DD1F732FEE00219207 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689DC1F732FEE00219207 /* Home.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D749AEFA1F79F0230059760F /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
+		D749AEFB1F79F0230059760F /* NewPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPersonViewController.m; sourceTree = "<group>"; };
 		D75689D21F732FEE00219207 /* Tabla1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabla1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75689D61F732FEE00219207 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D75689D81F732FEE00219207 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 			children = (
 				D75689DB1F732FEE00219207 /* Home.h */,
 				D75689DC1F732FEE00219207 /* Home.m */,
+				D749AEFA1F79F0230059760F /* NewPersonViewController.h */,
+				D749AEFB1F79F0230059760F /* NewPersonViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D749AEFC1F79F0230059760F /* NewPersonViewController.m in Sources */,
 				D75689DD1F732FEE00219207 /* Home.m in Sources */,
 				D75689DA1F732FEE00219207 /* AppDelegate.m in Sources */,
 				D75689D71F732FEE00219207 /* main.m in Sources */,
