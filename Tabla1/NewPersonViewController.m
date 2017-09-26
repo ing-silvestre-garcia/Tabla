@@ -9,9 +9,10 @@
 #import "NewPersonViewController.h"
 
 @interface NewPersonViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *txtDescription;
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtAge;
 @property (weak, nonatomic) IBOutlet UIImageView *imgProfile;
+@property (weak, nonatomic) IBOutlet UIButton *btnEditImage;
 @end
 
 @implementation NewPersonViewController
