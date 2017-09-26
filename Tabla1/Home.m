@@ -84,7 +84,7 @@
      [self.userImages addObject:@"jon.jpg"];
      [self.tblMain reloadData];
      */
-    [self performSegueWithIdentifier:@"toAddNewPerson" sender:nil];
+    [self performSegueWithIdentifier:@"toNewPerson" sender:nil];
 }
 
 #pragma mark - NewPersonDelegate

@@ -42,6 +42,9 @@
                                 <rect key="frame" x="0.0" y="596" width="375" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Agregar"/>
+                                <connections>
+                                    <action selector="btnAddPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ef0-QS-fDo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,7 +52,7 @@
                     <navigationItem key="navigationItem" title="Inicio" id="gPp-nk-y7p"/>
                     <connections>
                         <outlet property="tablePrincipal" destination="ZPV-SH-ige" id="35o-28-9le"/>
-                        <segue destination="tNc-lP-Hjp" kind="presentation" identifier="ToNewPerson" id="oXw-d2-sKE"/>
+                        <segue destination="tNc-lP-Hjp" kind="presentation" identifier="toNewPerson" id="oXw-d2-sKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,33 +87,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hho-XU-kJH">
-                                <rect key="frame" x="139" y="192" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcz-NF-sX1">
+                                <rect key="frame" x="121" y="354" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcz-NF-sX1">
-                                <rect key="frame" x="139" y="276" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jX5-us-Ls9">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jX5-us-Ls9">
                                 <rect key="frame" x="67" y="56" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5nf-kH-acd" appends="YES" id="V90-fM-EED"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUm-pk-kw2">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="2dh-pO-coJ" eventType="touchUpInside" id="mM2-w2-vGh"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hho-XU-kJH">
+                                <rect key="frame" x="121" y="264" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sih-9i-Kxb"/>
+                    <navigationItem key="navigationItem" id="Sih-9i-Kxb">
+                        <barButtonItem key="leftBarButtonItem" title="Atras" id="y31-uX-KIo">
+                            <connections>
+                                <action selector="btnBack:" destination="2dh-pO-coJ" id="Ayc-oP-VT1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnEditImage" destination="CUm-pk-kw2" id="FTK-d3-1BA"/>
                         <outlet property="imgProfile" destination="jX5-us-Ls9" id="mL9-dl-eb0"/>
@@ -119,6 +134,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YzR-7w-ZQl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5nf-kH-acd">
+                    <connections>
+                        <action selector="btnEditImage:" destination="2dh-pO-coJ" id="e6m-i6-Nn7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2757.5999999999999" y="122.78860569715144"/>
         </scene>

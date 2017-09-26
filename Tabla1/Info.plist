@@ -32,5 +32,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Para foto de personaje</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Para que salgas bonito</string>
 </dict>
 </plist>
