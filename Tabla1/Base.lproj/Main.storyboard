@@ -49,6 +49,7 @@
                     <navigationItem key="navigationItem" title="Inicio" id="gPp-nk-y7p"/>
                     <connections>
                         <outlet property="tablePrincipal" destination="ZPV-SH-ige" id="35o-28-9le"/>
+                        <segue destination="tNc-lP-Hjp" kind="presentation" identifier="ToNewPerson" id="oXw-d2-sKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

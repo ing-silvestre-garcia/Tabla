@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (readonly, strong) NSPersistentContainer *persistentContainer;
 @property (strong, nonatomic) UIWindow *window;
 
 - (void)saveContext;

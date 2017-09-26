@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D73DCA3F1F7B1B15000E90FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D91F732FEE00219207 /* AppDelegate.m */; };
 		D749AEFC1F79F0230059760F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749AEFB1F79F0230059760F /* NewPersonViewController.m */; };
 		D749AEFE1F79F3D40059760F /* arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D749AEFD1F79F3D40059760F /* arya.jpg */; };
 		D75689D71F732FEE00219207 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D61F732FEE00219207 /* main.m */; };
@@ -312,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D73DCA3F1F7B1B15000E90FF /* AppDelegate.m in Sources */,
 				D749AEFC1F79F0230059760F /* NewPersonViewController.m in Sources */,
 				D75689DD1F732FEE00219207 /* Home.m in Sources */,
 				D75689D71F732FEE00219207 /* main.m in Sources */,
