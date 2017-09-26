@@ -37,7 +37,7 @@
     
     self.userAges  = [[NSMutableArray alloc] initWithObjects: @"38 años", @"22 años", @"25 años", @"16 años", @"42 años", nil];
     
-    self.userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"tyrion.jpg"], [UIImage imageNamed:@"daenerys.jpeg"], [UIImage imageNamed:@"jon.jpg"], [UIImage imageNamed:@"arya.jpg"], [UIImage imageNamed:@"cersei.jpg"], nil];
+    self.userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"tyrion.jpg"], [UIImage imageNamed:@"danerys.jpg"], [UIImage imageNamed:@"jon.jpg"], [UIImage imageNamed:@"arya.jpg"], [UIImage imageNamed:@"cersei.jpg"], nil];
 }
 
 /**********************************************************************************************/
@@ -64,9 +64,9 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellMainTable"];
     }
     //Fill cell with info from arrays
-    cell.lblName.text       = self.userNames[indexPath.row];
-    cell.lblAge.text        = self.userAges[indexPath.row];
-    cell.imgUser.image      = self.userImages[indexPath.row];
+    cell.userName.text       = self.userNames[indexPath.row];
+    cell.userAge.text        = self.userAges[indexPath.row];
+    cell.userImage.image      = self.userImages[indexPath.row];
     
     return cell;
 }
