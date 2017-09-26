@@ -14,8 +14,6 @@
 		D75689E01F732FEE00219207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75689DE1F732FEE00219207 /* Main.storyboard */; };
 		D75689E21F732FEE00219207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75689E11F732FEE00219207 /* Assets.xcassets */; };
 		D75689E51F732FEE00219207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75689E31F732FEE00219207 /* LaunchScreen.storyboard */; };
-		D75689F01F732FEE00219207 /* Tabla1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689EF1F732FEE00219207 /* Tabla1Tests.m */; };
-		D75689FB1F732FEE00219207 /* Tabla1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689FA1F732FEE00219207 /* Tabla1UITests.m */; };
 		D7568A0F1F7336C200219207 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D7568A0D1F7336C200219207 /* cellMainTable.m */; };
 		D7568A101F7336C200219207 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7568A0E1F7336C200219207 /* cellMainTable.xib */; };
 		D7FB13D21F734D03004C4CBF /* cersei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7FB13CE1F734D03004C4CBF /* cersei.jpg */; };
@@ -56,11 +54,7 @@
 		D75689E41F732FEE00219207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D75689E61F732FEE00219207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D75689EB1F732FEE00219207 /* Tabla1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tabla1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D75689EF1F732FEE00219207 /* Tabla1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tabla1Tests.m; sourceTree = "<group>"; };
-		D75689F11F732FEE00219207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D75689F61F732FEE00219207 /* Tabla1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tabla1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D75689FA1F732FEE00219207 /* Tabla1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tabla1UITests.m; sourceTree = "<group>"; };
-		D75689FC1F732FEE00219207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7568A0C1F7336C200219207 /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
 		D7568A0D1F7336C200219207 /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
 		D7568A0E1F7336C200219207 /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
@@ -99,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				D75689D41F732FEE00219207 /* Tabla1 */,
-				D75689EE1F732FEE00219207 /* Tabla1Tests */,
-				D75689F91F732FEE00219207 /* Tabla1UITests */,
 				D75689D31F732FEE00219207 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,24 +129,6 @@
 				D75689D61F732FEE00219207 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D75689EE1F732FEE00219207 /* Tabla1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D75689EF1F732FEE00219207 /* Tabla1Tests.m */,
-				D75689F11F732FEE00219207 /* Info.plist */,
-			);
-			path = Tabla1Tests;
-			sourceTree = "<group>";
-		};
-		D75689F91F732FEE00219207 /* Tabla1UITests */ = {
-			isa = PBXGroup;
-			children = (
-				D75689FA1F732FEE00219207 /* Tabla1UITests.m */,
-				D75689FC1F732FEE00219207 /* Info.plist */,
-			);
-			path = Tabla1UITests;
 			sourceTree = "<group>";
 		};
 		D7568A081F73307200219207 /* Controllers */ = {
@@ -349,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75689F01F732FEE00219207 /* Tabla1Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75689FB1F732FEE00219207 /* Tabla1UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
