@@ -14,6 +14,9 @@
 @property NSMutableArray *userNames;
 @property NSMutableArray *userAges;
 @property NSMutableArray *userImages;
+
+@property NSMutableArray *characters;
+@property NSDictionary *charactersInfo;
 @end
 
 @implementation Home
@@ -33,6 +36,38 @@
 
 //-------------------------------------------------------------------------------
 - (void)initController {
+    self.characters = [[NSMutableArray alloc] init];
+    [self.characters addObject:@{
+                                 @"name":@"Tyrion Lanniester",
+                                 @"age":@"38 anios",
+                                 @"image":@"tyrion.jpg",
+                                 @"description":@"Descripcion Tyrion Lanniester"
+                                 }];
+    [self.characters addObject:@{
+                                 @"name":@"Danerys Targaryen",
+                                 @"age":@"22 anios",
+                                 @"image":@"danerys.jpg",
+                                 @"description":@"Descripcion Danerys"
+                                 }];
+    [self.characters addObject:@{
+                                 @"name":@"Jon Snow",
+                                 @"age":@"25 anios",
+                                 @"image":@"jon.jpg",
+                                 @"description":@"Descripcion Jon Snow"
+                                 }];
+    [self.characters addObject:@{
+                                 @"name":@"Arya Stark",
+                                 @"age":@"16 anios",
+                                 @"image":@"arya.jpg",
+                                 @"description":@"Descripcion Arya"
+                                 }];
+    [self.characters addObject:@{
+                                 @"name":@"Cersei Lanniser",
+                                 @"age":@"42 anios",
+                                 @"image":@"cercei.jpg",
+                                 @"description":@"Descripcion Cersei"
+                                 }];
+    
     self.userNames  = [[NSMutableArray alloc] initWithObjects: @"Tyrion Lannister", @"Daenerys Targaryen", @"Jon Snow", @"Arya Stark", @"Cersei Lannister", nil];
     
     self.userAges  = [[NSMutableArray alloc] initWithObjects: @"38 años", @"22 años", @"25 años", @"16 años", @"42 años", nil];
