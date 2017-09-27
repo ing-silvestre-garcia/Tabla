@@ -11,9 +11,6 @@
 #import "NewPersonViewController.h"
 
 @interface Home () <NewPersonDelegate>
-@property NSMutableArray *userNames;
-@property NSMutableArray *userAges;
-@property NSMutableArray *userImages;
 
 @property NSMutableArray *characters;
 @property NSDictionary *charactersInfo;
@@ -67,12 +64,7 @@
                                  @"image":@"cercei.jpg",
                                  @"description":@"Descripcion Cersei"
                                  }];
-    
-    self.userNames  = [[NSMutableArray alloc] initWithObjects: @"Tyrion Lannister", @"Daenerys Targaryen", @"Jon Snow", @"Arya Stark", @"Cersei Lannister", nil];
-    
-    self.userAges  = [[NSMutableArray alloc] initWithObjects: @"38 años", @"22 años", @"25 años", @"16 años", @"42 años", nil];
-    
-    self.userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"tyrion.jpg"], [UIImage imageNamed:@"danerys.jpg"], [UIImage imageNamed:@"jon.jpg"], [UIImage imageNamed:@"arya.jpg"], [UIImage imageNamed:@"cersei.jpg"], nil];
+
 }
 
 /**********************************************************************************************/
@@ -83,7 +75,7 @@
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.userNames.count;
+    return self.characters.count;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -99,9 +91,10 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellMainTable"];
     }
     //Fill cell with info from arrays
-    cell.userName.text       = self.userNames[indexPath.row];
-    cell.userAge.text        = self.userAges[indexPath.row];
-    cell.userImage.image      = self.userImages[indexPath.row];
+    NSDictionary *posicionDictionary = self.characters[indexPath.row];
+    cell.userName.text       = posicionDictionary[@"name"];
+    cell.userAge.text        = posicionDictionary[@"age"];
+    cell.userImage.image      = [UIImage imageNamed:posicionDictionary[@"image"]];
     
     return cell;
 }
@@ -126,10 +119,10 @@
 
 - (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image {
     NSLog(@"%@",name);
-    [self.userNames addObject:name];
+    /*[self.userNames addObject:name];
     [self.userAges addObject:@""];
     [self.userImages addObject:image];
-    [self.tablePrincipal reloadData];
+    [self.tablePrincipal reloadData];*/
 }
 
 #pragma mark - Segue
