@@ -37,31 +37,31 @@
     [self.characters addObject:@{
                                  @"name":@"Tyrion Lanniester",
                                  @"age":@"38 anios",
-                                 @"image":@"tyrion.jpg",
+                                 @"image":[UIImage imageNamed:@"tyrion.jpg"],
                                  @"description":@"Descripcion Tyrion Lanniester"
                                  }];
     [self.characters addObject:@{
                                  @"name":@"Danerys Targaryen",
                                  @"age":@"22 anios",
-                                 @"image":@"danerys.jpg",
+                                 @"image":[UIImage imageNamed:@"danerys.jpg"],
                                  @"description":@"Descripcion Danerys"
                                  }];
     [self.characters addObject:@{
                                  @"name":@"Jon Snow",
                                  @"age":@"25 anios",
-                                 @"image":@"jon.jpg",
+                                 @"image":[UIImage imageNamed:@"jon.jpg"],
                                  @"description":@"Descripcion Jon Snow"
                                  }];
     [self.characters addObject:@{
                                  @"name":@"Arya Stark",
                                  @"age":@"16 anios",
-                                 @"image":@"arya.jpg",
+                                 @"image":[UIImage imageNamed:@"arya.jpg"],
                                  @"description":@"Descripcion Arya"
                                  }];
     [self.characters addObject:@{
                                  @"name":@"Cersei Lanniser",
                                  @"age":@"42 anios",
-                                 @"image":@"cercei.jpg",
+                                 @"image":[UIImage imageNamed:@"cersei.jpg"],
                                  @"description":@"Descripcion Cersei"
                                  }];
 
@@ -94,7 +94,7 @@
     NSDictionary *posicionDictionary = self.characters[indexPath.row];
     cell.userName.text       = posicionDictionary[@"name"];
     cell.userAge.text        = posicionDictionary[@"age"];
-    cell.userImage.image      = [UIImage imageNamed:posicionDictionary[@"image"]];
+    cell.userImage.image      = posicionDictionary[@"image"];
     
     return cell;
 }
@@ -128,7 +128,7 @@
 #pragma mark - Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"toAddNewPerson"]) {
+    if ([segue.identifier isEqualToString:@"toNewPerson"]) {
         UINavigationController *navigationController = [segue destinationViewController];
         NewPersonViewController *personVC = [[navigationController viewControllers]firstObject];
         personVC.delegate = self;
