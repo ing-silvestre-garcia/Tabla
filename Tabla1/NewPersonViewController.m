@@ -35,7 +35,7 @@
 
 - (IBAction)btnSave:(UIButton *)sender {
     if (self.delegate != nil) {
-        [self.delegate didAddPersonName:self.txtName.text andImageSelected:self.imgProfile.image];
+        [self.delegate didAddPersonName:self.txtName.text andImageSelected:self.imgProfile.image addPersonAge:self.txtAge.text];
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }

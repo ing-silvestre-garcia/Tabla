@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol NewPersonDelegate <NSObject>
-- (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image;
+- (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image addPersonAge:(NSString *)age;
 @end
 
 @interface NewPersonViewController : UIViewController

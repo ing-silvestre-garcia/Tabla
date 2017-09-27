@@ -116,13 +116,13 @@
 }
 
 #pragma mark - NewPersonDelegate
-
-- (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image {
-    NSLog(@"%@",name);
-    /*[self.userNames addObject:name];
-    [self.userAges addObject:@""];
-    [self.userImages addObject:image];
-    [self.tablePrincipal reloadData];*/
+- (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image addPersonAge:(NSString *)age {
+    [self.characters addObject:@{
+                                 @"name":name,
+                                 @"age":age,
+                                 @"image":image
+                                 }];
+    [self.tablePrincipal reloadData];
 }
 
 #pragma mark - Segue
