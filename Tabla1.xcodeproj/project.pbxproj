@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D73DCA3F1F7B1B15000E90FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D91F732FEE00219207 /* AppDelegate.m */; };
+		D73DCA421F7B346F000E90FF /* DetailPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D73DCA411F7B346F000E90FF /* DetailPersonViewController.m */; };
 		D749AEFC1F79F0230059760F /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D749AEFB1F79F0230059760F /* NewPersonViewController.m */; };
 		D749AEFE1F79F3D40059760F /* arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D749AEFD1F79F3D40059760F /* arya.jpg */; };
 		D75689D71F732FEE00219207 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D75689D61F732FEE00219207 /* main.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D73DCA401F7B346F000E90FF /* DetailPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPersonViewController.h; sourceTree = "<group>"; };
+		D73DCA411F7B346F000E90FF /* DetailPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPersonViewController.m; sourceTree = "<group>"; };
 		D749AEFA1F79F0230059760F /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
 		D749AEFB1F79F0230059760F /* NewPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPersonViewController.m; sourceTree = "<group>"; };
 		D749AEFD1F79F3D40059760F /* arya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arya.jpg; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				D75689DC1F732FEE00219207 /* Home.m */,
 				D749AEFA1F79F0230059760F /* NewPersonViewController.h */,
 				D749AEFB1F79F0230059760F /* NewPersonViewController.m */,
+				D73DCA401F7B346F000E90FF /* DetailPersonViewController.h */,
+				D73DCA411F7B346F000E90FF /* DetailPersonViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 				D749AEFC1F79F0230059760F /* NewPersonViewController.m in Sources */,
 				D75689DD1F732FEE00219207 /* Home.m in Sources */,
 				D75689D71F732FEE00219207 /* main.m in Sources */,
+				D73DCA421F7B346F000E90FF /* DetailPersonViewController.m in Sources */,
 				D7568A0F1F7336C200219207 /* cellMainTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,7 @@
 #import "Home.h"
 #import "cellMainTable.h"
 #import "NewPersonViewController.h"
+#import "DetailPersonViewController.h"
 
 @interface Home () <NewPersonDelegate>
 
@@ -100,7 +101,9 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Pending
+    NSDictionary *seleccionDictionary = self.characters[indexPath.row];
+    
+    [self performSegueWithIdentifier:@"toDetailPerson" sender:seleccionDictionary];
 }
 /**********************************************************************************************/
 #pragma mark - Action methods
@@ -133,7 +136,10 @@
         NewPersonViewController *personVC = [[navigationController viewControllers]firstObject];
         personVC.delegate = self;
     }
-}
+    if ([segue.identifier isEqualToString:@"toDetailPerson"]) {
+        DetailPersonViewController *navigationController = [segue destinationViewController];
+        navigationController.personInfo = sender;
+    }}
 
 
 @end
